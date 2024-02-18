@@ -13,7 +13,11 @@ Step3.開始執行轉換器，並輸入欲轉換之SQL語句。
       並將SQL語句進行轉換為新名稱之寫法。
 
 ex.
-INPUT:" select  s_filenm 	from GSO..c60_att with (nolock) 		where crtid = #crtid#   and sys = #sys#  and c_no = #c_no#    and s_file = #s_file#"
-OUTPUT:"select  SUIT_FILE_NM  FROM  CASE_ATT  WITH  (NOLOCK)  WHERE CRT_ID = #crtid#  AND SYS = #sys#  AND CASE_NO = #c_no# AND SUIT_FILE = #s_file"
+
+INPUT:
+" select  s_filenm 	from GSO..c60_att with (nolock) 		where crtid = #crtid#   and sys = #sys#  and c_no = #c_no#    and s_file = #s_file#"
+
+OUTPUT:
+"select  SUIT_FILE_NM  FROM  CASE_ATT  WITH  (NOLOCK)  WHERE CRT_ID = #crtid#  AND SYS = #sys#  AND CASE_NO = #c_no# AND SUIT_FILE = #s_file"
 
 
